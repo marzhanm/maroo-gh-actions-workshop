@@ -15,3 +15,7 @@ jobs:
         run: |
           echo "Hello $MY_ENV"
           echo "Hello $GITHUB_ACTOR"
+          on:
+          workflow_dispatch:
+          issues:
+          types: [opened, edited]
